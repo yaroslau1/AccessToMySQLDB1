@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+         content must come *after* these tags -->
+    <title>Site</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Some interesting site</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"
+                                                 aria-hidden="true"></span> Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                <h1>Some interesting site</h1>
+                <p style="padding:25px;"></p>
+                <p>Some interesting description</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="row row-content">
+    <div class="col-xs-12">
+        <h3>Add city to the DB</h3>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+        <form class="form-horizontal" role="form" action="city" method="post">
+            <div class="form-group">
+                <label for="cityname" class="col-sm-2 control-label">City Name</label>                        <div class="col-sm-10">
+                <input type="text" class="form-control" id="cityname" name="cityname" placeholder="Enter City Name: Minsk">
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="population" class="col-sm-2 control-label">Population</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="population" name="population" placeholder="Enter Population: 2275000000">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="countryCode" class="col-sm-2 control-label">Country Code</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="countryCode" name="countryCode" placeholder="Enter Country Code: BLR">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Send Feedback</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <p style="padding:20px;"></p>
+    </div>
+</div>
+
+
+<!--<form action="site" method="post">
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td>
+                <input type="text" name="txt_first_name"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td>
+                <input type="text" name="txt_last_name"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                <input type="submit" value="Go To Hello Page"/>
+            </td>
+        </tr>
+    </table>
+</form>-->
+
+<footer class="row-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-5">
+                <h5>Our Address</h5>
+                <address>
+                    220100, Minsk city<br>
+                    BELARUS<br>
+                    <i class="fa fa-phone"></i>: +375 33 689 34 08<br>
+                    <i class="fa fa-envelope"></i>:
+                    <a href="mailto:confusion@food.net">sam.yar@mail.ru</a>
+                </address>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="nav navbar-nav" style="padding: 40px 10px;">
+                    <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <p style="padding:10px;"></p>
+                <p align=center>© Copyright 2018 Some interesting site</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
